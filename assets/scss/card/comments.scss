@@ -1,0 +1,33 @@
+.card-comment{
+    @include border-box;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px 20px;
+    & + .card-comment {
+        margin-top: 5px;
+    }
+
+    &__right{
+        padding-left: 8px;
+    }
+    &__header{
+        padding-bottom: 10px;
+        &-name{
+            font-size: 15px;
+            line-height: 22px;
+            color: $main-color;
+        }
+        &-email{
+            font-size: 13px;
+            line-height: 22px;
+            color: #BCBEC0;
+        }
+    }
+    &__body{
+        font-size: 13px;
+        line-height: 18px;
+        color: $main-color;
+    }
+
+}

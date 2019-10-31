@@ -1,0 +1,47 @@
+.card{
+    @include border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px 38px 32px 38px;
+    & + .card {
+        margin-top: 10px;
+    }
+    &__header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+
+        &-title{
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 32px;
+            color: $main-color;
+            cursor: pointer;
+            transition: color ease-in-out .2s;
+            &:hover{
+                color: $sub-color;
+            }
+        }
+        &-chevron{
+            cursor: pointer;
+        }
+    }
+    &__body{
+        font-size: 15px;
+        line-height: 22px;
+        color: $main-color;
+
+        padding-bottom: 24px;
+    }
+    &__date{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: $sub-color;
+    }
+}

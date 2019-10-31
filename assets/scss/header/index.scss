@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 100px auto;
+    &__logo{
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 460px;
+        width: 100%;
+        &-item{
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: #000000;
+            font-size: 15px;
+            line-height: 22px;
+            &:hover{
+                font-weight: bold;
+            }
+            &_active{
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.page{
+    font-family: 'Open Sans', sans-serif;
+    &__post{
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        width: 100%;
+        margin-bottom: 30px;
+        &-title{
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 50px;
+            color: $main-color;
+            padding-bottom: 46px;
+        }
+        &-body{
+            font-size: 15px;
+            line-height: 22px;
+            color: $main-color;
+            padding-bottom: 40px;
+        }
+    }
+    &__comments{
+        &-title{
+            font-size: 20px;
+            line-height: 28px;
+            color: $main-color;
+            padding-bottom: 20px;
+        }
+        &-refresh{
+            display: flex;
+            align-items: center;
+            margin: 80px auto 158px auto;
+            justify-content: center;
+            background: #F0F0F0;
+            border-radius: 5px;
+            border: none;
+            padding: 11px 50px;
+            & i{
+                color: #DADADA;
+            }
+            & span{
+                margin-left: 7px;
+                font-size: 13px;
+                line-height: 25px;
+                color: $main-color;
+            }
+            &:active, &:focus{
+                outline: none;
+            }
+            &:hover{
+                cursor: pointer;
+                background: #F5F5F5;
+            }
+        }
+    }
+}

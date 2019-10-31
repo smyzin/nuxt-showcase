@@ -1,0 +1,26 @@
+// text colors
+$main-color: rgba(0, 0, 0, 1);
+$sub-color: rgba(0, 0, 0, .5);
+// body bg color
+$bg-color-body: #E5E5E5;
+// bg white color
+$bg-color-white: #ffffff;
+
+@mixin border-box {
+    background: $bg-color-white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 5px;
+}
+
+@mixin btn-style {
+    background: #F0F0F0;
+    border-radius: 5px;
+    & span {
+        font-size: 13px;
+        line-height: 25px;
+        color: $main-color;
+    }
+}
